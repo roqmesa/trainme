@@ -1,4 +1,5 @@
 class ClientsController < ApplicationController
-  def index
+   def index
+    @clients = Clients.all
   end
 end

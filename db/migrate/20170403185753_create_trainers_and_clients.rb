@@ -21,5 +21,10 @@ class CreateTrainersAndClients < ActiveRecord::Migration[5.0]
       t.string :specialties, null:false
     end
 
+    create_table :client_posts do |t|
+      t.text :about, null:false
+      t.string :specialties, null:false
+    end
+
   end
 end
